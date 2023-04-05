@@ -1,0 +1,165 @@
+*,*::after , *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    background-color: rgb(9 16 237);
+    color: #cbccff;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+.bigbox{
+    height: 46vw;
+    background-color: #d7dbfa;
+}
+.winimg{
+    display: none;
+}
+.game-container{
+    display: flex;
+    justify-content: center;
+}
+.leftbox{
+    display: flex;
+    flex-direction: row;
+}
+.leftbox .infoL{
+    font-size: 2vw;
+    padding-right: 10vw;
+    padding-top: 3vw;
+}
+.leftbox img{
+    position: absolute;
+    top: 17.8vw;
+    left: 12vw;
+    height: 15vw;
+}
+.notmyturnL{
+    display: none;
+}
+
+.container{
+    position: relative;
+    display: grid;
+    margin: 4vw;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 8vw;
+}
+.box:hover{
+    background-color: rgb(174, 198, 239);
+    cursor: pointer;
+}
+.rightbox{
+    display: flex;
+    flex-direction: row;
+}
+.rightbox .infoR{
+    visibility: hidden;
+    font-size: 2vw;
+    padding-left: 10vw;
+    padding-top: 3vw;
+}
+.rightbox img{
+    position: absolute;
+    top: 15vw;
+    right: 15vw;
+    height: 15vw;
+}
+.myturnR{
+    display: none;
+}
+p{
+    background-color: rgb(160, 185, 235);
+    position: absolute;
+    bottom: 15vw;;
+}
+.left{
+    left: 18vw;
+}
+.right{
+    right: 18vw;
+}
+#reset{
+    display: block;
+    margin: auto;
+    width: 12vw;
+    height: 2vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    background-color: rgb(43 55 205);
+    color: rgb(209 216 249);
+    border-radius: 20px;
+}
+#reset:hover{
+    cursor: pointer;
+    background-color: rgb(119, 119, 249) ;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.line{
+    background-color: rgb(245, 26, 6);
+    width: 0;
+    height: 3px;
+    position: absolute;
+    transition: width ease-in-out;
+    transition-duration: 2s;
+}
+.winning-message{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(3, 39, 47);
+    opacity: 0.8;
+    color: rgb(111, 199, 244);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    font-size: 3rem;
+}
+.winning-message img{
+    height: 200px;
+    width: 200px;
+}
+#restartbutton{
+    position: absolute;
+    bottom: 8.3vw;
+    left: 40.5vw;
+    background-color: rgb(18, 9, 70);
+    color: rgb(255, 255, 255);
+    margin: 3rem;
+    height: 3rem;
+    width: 13rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border: 2px solid rgb(118, 2, 138);
+    border-radius: 50px;
+}
+#restartbutton:hover{
+    cursor: pointer;
+    background-color: rgb(18, 4, 144);
+}
+
